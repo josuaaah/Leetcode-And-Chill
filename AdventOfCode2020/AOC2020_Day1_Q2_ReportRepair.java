@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-class ThreeSum {
+class ReportRepair {
 
     static Map<Integer,Boolean> readInputs() {
         Map<Integer,Boolean> map = new HashMap<>();

@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.stream.Stream;
 
-class PasswordChecker {
+class PasswordPhilosophy {
 
     static List<String> readInputs() {
         List<String> inputs = new ArrayList<>();

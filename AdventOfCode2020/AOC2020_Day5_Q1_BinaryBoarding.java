@@ -17,7 +17,7 @@ public class BinaryBoarding {
     static char LOWER_HALF_COL_CHAR = 'L';
     static char UPPER_HALF_COL_CHAR = 'R';
 
-    static int NUM_ROW_CHARS = 5;
+    static int NUM_ROW_CHARS = 7;
     static int NUM_COL_CHARS = 3;
 
     static List<String> readInput() {
@@ -51,7 +51,7 @@ public class BinaryBoarding {
         if (rowInfo.charAt(NUM_ROW_CHARS - 1) == UPPER_HALF_ROW_CHAR) {
             row = higherRow;
         }
-        
+
         return row;
     }
 

@@ -1,1 +1,4 @@
 .DS_Store
+.idea/
+lib/
+Leetcode-And-Chill.iml

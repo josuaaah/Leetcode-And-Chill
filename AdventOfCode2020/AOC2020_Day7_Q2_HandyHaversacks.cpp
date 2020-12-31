@@ -37,7 +37,7 @@ public:
             cout << container << ": ";
             vector<pair<int, string>> requirements = it -> second;
             for (pair<int, string> requirement : requirements) {
-            	cout << to_string(requirement.first) + " " + requirement.second << ", ";
+                cout << to_string(requirement.first) + " " + requirement.second << ", ";
             }
             cout << "\n";
         }
@@ -48,21 +48,21 @@ public:
     }
 
     bool containNoOtherBags(string containerColour) {
-    	return getRequirements(containerColour).empty();
+        return getRequirements(containerColour).empty();
     }
 
     int getNumBagsRequired(string containerColour) {
-    	int num = 0;
-    	for (pair<int, string> requirement : getRequirements(containerColour)) {
-    		int numRequired = requirement.first;
-    		string containerColour = requirement.second;
-    		if (containNoOtherBags(containerColour)) {
-    			num += numRequired;
-    		} else {
-    			num += numRequired + numRequired * getNumBagsRequired(containerColour);
-    		}
-    	}
-    	return num;
+        int num = 0;
+        for (pair<int, string> requirement : getRequirements(containerColour)) {
+            int numRequired = requirement.first;
+            string containerColour = requirement.second;
+            if (containNoOtherBags(containerColour)) {
+                num += numRequired;
+            } else {
+                num += numRequired + numRequired * getNumBagsRequired(containerColour);
+            }
+        }
+        return num;
     }
 };
 

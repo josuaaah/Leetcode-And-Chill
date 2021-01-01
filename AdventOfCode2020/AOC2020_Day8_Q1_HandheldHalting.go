@@ -85,7 +85,6 @@ func parseInstruction(content string) Instruction {
     }
 }
 
-
 type Execution interface {
     execute()
 }
@@ -114,7 +113,6 @@ func (je JmpExecution) execute() {
 func (ne NopExecution) execute() {
     currentInstruction += 1
 }
-
 
 type Instruction struct {
     execution Execution

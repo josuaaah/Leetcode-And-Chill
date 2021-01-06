@@ -32,3 +32,4 @@ An algorithm a day keeps the unemployment away.
 
 - Credit Suisse Coding Challenge 2020 Entry Submission (Python)
 - ByteDance Internship Application HackerRank Test (Java) (not included in this repo)
+- SquarePoint Internship Application HackerRank Test (Python) (not included in this repo)
